@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(197, 31, 197);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.header{
+    height: 300px;
+}
+.header h1 {
+    font-size: 50px;
+    line-height: 1.6;
+    padding-bottom: 32px;
+    position: relative;
+    animation-name: myHeaderAnimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes myHeaderAnimation{
+    0%{top:-50px;}
+    100%{top:200px}
+}
+.container{
+    margin: auto;
+    max-width: 960px;
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+.container p{
+    position: relative;
+    animation-name: myContainerAnimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes myContainerAnimation{
+    0%{left:-900px;opacity: 0;}
+    50%{left:-450;opacity: 50%;}
+    100%{left:0px;opacity:100%}
+}
+a.btn{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    border: white 1px solid;
+    animation-name:myBtnAnimation ;
+    animation-duration: 3.6s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1s;
+}
+a.btn:hover{
+    background-color: rgba(24, 24, 128, 0.623);
+}
+@keyframes myBtnAnimation{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    75%{opacity: 0%;}
+    100%{opacity:100%;}
+}
